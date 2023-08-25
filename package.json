@@ -1,0 +1,28 @@
+{
+  "name": "mini-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lint-staged": "13.2.2",
+    "prettier": "^2.8.8",
+    "yorkie": "^2.0.0"
+  },
+  "gitHooks":{
+    "pre-commit":"lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  }
+}
