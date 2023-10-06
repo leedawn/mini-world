@@ -1,0 +1,10 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "skipLibCheck": true, // 不设置这个就会检查库文件,
+    "strict": true,
+    "lib": ["es2015", "dom"],
+    "types": ["jest"],
+    "esModuleInterop": true
+  }
+}
